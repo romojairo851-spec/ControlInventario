@@ -1,0 +1,6 @@
+*.class
+/dist
+/build
+/target
+.idea
+*.jar
