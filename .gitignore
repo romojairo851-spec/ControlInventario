@@ -4,3 +4,7 @@
 /target
 .idea
 *.jar
+/JavaApplication1/nbproject/private/
+/ControlInventario/nbproject/private/
+/ControlInventario/build/
+/ControlInventario/dist/
