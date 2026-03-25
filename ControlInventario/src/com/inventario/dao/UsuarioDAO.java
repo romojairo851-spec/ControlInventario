@@ -113,7 +113,7 @@ public class UsuarioDAO {
     
     // 4. ACTUALIZAR USUARIO (Update)
     public boolean actualizar(Usuario usuario) {
-        String sql = "UPDATE usuarios SET nombre=?, username=?, password=?, email=?, rol=? WHERE idUsuario=?";
+        String sql = "UPDATE usuarios SET nombre=?, username=?, password=?, email=? WHERE idUsuario=?";
         
         try (Connection conn = Conexion.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
@@ -122,7 +122,7 @@ public class UsuarioDAO {
             ps.setString(2, usuario.getUsername());
             ps.setString(3, usuario.getPassword());
             ps.setString(4, usuario.getEmail());
-            ps.setInt(6, usuario.getIdUsuario());
+            ps.setInt(5, usuario.getIdUsuario());
             
             int filasAfectadas = ps.executeUpdate();
             return filasAfectadas > 0;

@@ -77,6 +77,6 @@ public class Usuario {
     // Útil para imprimir los datos del objeto en la consola de forma legible
     @Override
     public String toString() {
-        return "Usuario{" + "idUsuario=" + idUsuario + ", nombre=" + nombre + ", username=" + username + ", email=" + email +  + '}';
+        return "Usuario{" + "idUsuario=" + idUsuario + ", nombre=" + nombre + ", username=" + username + ", email=" + email + '}';
     }
 }
